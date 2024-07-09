@@ -9,13 +9,6 @@ public class App {
 
         MotivationController motivationController = new MotivationController();
 
-//        명령어 ) 목록
-//        명령어 ) 등록
-//        명령어 ) 수정?id=3
-//        명령어 ) 상세보기?id=3
-//        명령어 ) 삭제?id=3
-//        명령어 ) 종료
-
         while (sys_status == 0) {
             System.out.print("명령어 ) ");
             String cmd = Container.getScanner().nextLine().trim();
@@ -31,7 +24,6 @@ public class App {
                 String[] opts = options[1].split("=", 2);
                 if (opts.length > 1) {
                     option = opts[1];
-//                    System.out.println("option = " + option);
                 }
             }
 

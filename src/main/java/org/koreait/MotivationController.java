@@ -36,12 +36,9 @@ public class MotivationController {
         System.out.print("작가 : ");
         String author = Container.getScanner().nextLine().trim();
 
-        // 현재 날짜 구하기
         Date now = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String formatedNow = dateFormat.format(now);
-//        System.out.println("포맷 지정 후: " + dateFormat.format(now));
-
 
         Motivation newMotivation = new Motivation(id, formatedNow, content, author);
 
